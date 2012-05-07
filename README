@@ -1,0 +1,17 @@
+Overview
+
+Welcome to the UCLA CogGene Meta-Analyzer. This tool allows you to dynamically generate forest plots in order to examine the results from sixty-three research articles reporting correlation betweeen various genes and cognitive phenotypes. To begin, select or search from the drop-down list below the feaure that you are interested in plotting across studies.
+
+Citing CogGene
+
+If you use the UCLA CogGene Meta-Analyzer, please cite us using: 
+
+Bilder RM, Howe A, Novak N, Sabb FW, Parker, DS. The Genetics of Cognitive Impairment in Schizophrenia: A Phenomic Perspective. Trends in Cognitive Science, Submitted 2011.
+
+fplot.html dependencies:
+
+-BrowserDetect			http://www.quirksmode.org/js/detect.html	
+-Raphael			http://raphaeljs.com/
+-JQuery				http://jquery.com/
+-Flexbox			http://flexbox.codeplex.com/	
+

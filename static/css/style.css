@@ -1,0 +1,219 @@
+.tab
+{
+padding-bottom: 2em;
+}
+
+.tab ul, .tab li{border:0; margin:0; padding:0; list-style:none;}
+.tab ul{
+border-bottom:solid 1px #e9f0f5;
+height:29px;
+} 
+.tab li{float:left; margin-right:2px;}
+
+.tab a:link, .tab a:visited{
+color:#56554e;
+display:inline;
+font-weight:bold;
+height:30px;
+line-height:30px;
+text-decoration:none;
+}
+.tab a span{
+display:inline;
+height:30px;
+margin-right:14px;
+padding-left:14px;
+}
+.tab a:hover{
+display:inline;
+color:#e0ded0;
+}
+.tab a:hover span{
+display:inline;
+}
+
+.activeTab a:link, .activeTab a:visited, .activeTab a:visited, .activeTab a:hover{
+color:#1c4e7e;
+} 
+.activeTab a span, .activeTab a:hover span{
+
+}
+
+
+body 
+{
+font-family: Helvetica, Arial, sans-serif;
+}
+
+
+h3 
+{
+padding: 10px 0 3px 0;
+padding-top: 10px;
+padding-right: 0px;
+padding-bottom: 3px;
+padding-left: 0px;
+margin-bottom: 18px;
+font: normal 2.5em/1.33em Helvetica, Arial, sans-serif;
+color: #2F2F2F;
+border-bottom: 3px solid #2F2F2F;
+border-bottom-width: 3px;
+border-bottom-style: solid;
+border-bottom-color: #2F2F2F;
+}
+
+.shine
+{
+font-size:55px;
+position:relative;
+display:block;
+color:#043a6b;
+}
+
+.topCont
+{
+width: 100%;
+background-color: #F0F0F6; 
+padding: 30px;
+border:1px dotted #043a6b;
+}
+
+.methodsCont
+{
+width: 700px;
+background-color: #F0F0F6; 
+padding: 30px;
+border:1px dotted #043a6b;
+}
+
+.bottomCont
+{
+width: 800px;
+background-color: #F0F0F6; 
+padding: 15px;
+border:1px dotted #043a6b;
+}
+
+p 
+{
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+div 
+{
+font-size: 14px; 
+}
+
+.fnote a, .fnote a:visited {
+    color: #CC0000;
+    text-decoration: none;
+    border-bottom: 1px solid #CC0000;
+}
+.fnote a:hover {
+    color: #000000;
+}
+
+a.c4, a.c4:visited {
+    color: #C11B17;
+    text-decoration: none;
+}
+a.c4:hover {
+    color: #FBB917;
+	border-bottom: 1px solid #FBB917;
+}
+
+.reference a, .reference a:visited {
+    color: #C11B17;
+    text-decoration: none;
+}
+.reference a:hover {
+    color: #FBB917;
+	border-bottom: 1px solid #FBB917;
+}
+
+#citation
+{
+	background-color: #FFFFFF;
+	position: relative;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+#yPos 
+{ 
+font-size: 14px; 
+}
+
+#bInfo 
+{ 
+font-size: 10px; 
+}
+
+#tip{
+position : absolute;
+border : 1px solid gray;
+background-color : #efefef;
+padding : 3px;
+z-index: 1000;
+max-width: 300px;
+color : #747862;
+
+}
+
+#labelFormat
+{
+font-size:24px;
+font-weight:bold;
+line-height: 1em;
+}
+
+#clickFormat
+{
+font-size:14px;
+line-height: 1em;
+}
+
+#error
+{
+color : #f00;
+font-size:24px;
+}
+
+#warning
+{
+color : #c00;
+}
+
+#spinnerIE{
+position: absolute; 
+left: 50%;
+top: expression( ( ignoreMe = document.body.scrollTop ) + 'px' );
+text-align: center;
+background-color : #FDD017;
+padding: 50;
+margin-top: -50px;
+margin-left: -100px;
+width: 8em;
+margin-top: -2.5em;
+font-size:20px;
+}
+
+#spinner{
+ position: fixed; 
+top: 50%;
+left: 50%;
+text-align: center;
+background-color : #FDD017;
+padding: 50;
+margin-top: -50px;
+margin-left: -100px;
+width: 8em;
+margin-top: -2.5em;
+font-size:20px;
+}
+
+span.c2 {font-style:italic;}

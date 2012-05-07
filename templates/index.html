@@ -1,0 +1,103 @@
+<html><head><title>UCLA CogGene Meta-Analyzer</title>
+<script type="text/javascript" charset="utf-8" src="/static/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/browserdetect-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/raphael-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/jquery.flexbox.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/hash-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/js/fplot-min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23633353-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.flexbox.css" />
+<style type="text/css"></style></head>
+
+<body>
+
+<img src="/static/image/cogGene75.jpg"></img>
+
+<ul class="tab">
+<li class="activeTab"><a href="/"><span>Meta Analysis </span></a></li>
+<li><a href="/methods"><span>Methods</span></a></li>
+<li><a href="/references"><span>References</span></a></li>
+<li><a href="/contact"><span>Contact</span></a></li>
+</ul>
+
+<table class="topCont">
+<tbody>  
+<tr>  
+<td>
+<div id="browserRecommend"></div>
+
+<div>
+<p><b>Overview</b></p>
+
+<p>Welcome to the UCLA CogGene Meta-Analyzer. This tool allows you to dynamically generate forest plots in order to examine the results from <span class='reference' ><a href="/references">sixty-three research articles</a></span> reporting correlation betweeen various genes and cognitive phenotypes. To begin, select or search from the drop-down list below the feaure that you are interested in plotting across studies.</p>
+
+<p><b>Citing CogGene</b></p>
+<p>If you use the UCLA CogGene Meta-Analyzer, please cite us using: <br/><div id='citation'>Bilder RM, Howe A, Novak N, Sabb FW, Parker, DS. The Genetics of Cognitive Impairment in Schizophrenia: A Phenomic Perspective. Trends in Cognitive Science, Submitted 2011.</div></p>
+
+<b>Quick Guide</b>                                                                                             
+
+<ul>
+<li><b>Effect sizes</b> are plotted as orange circles. The diameter of the circle is proportional to the sample size used to derive the effect size.
+<li><b>Confidence intervals</b> (95%) for the effect sizes are represented as dark blue bars.
+<li><b>Sorting</b> - Information about the data is described graphically by the three columns of Criterion Bars to the left of the plot. Hover over these bars to highlight the rows that they describe, and click them to sort the plot by that particular criteria. 
+<li><b>Means</b> of effect size groups are indicated by the dashed orange vertical lines. The group of effect sizes for which the means are calculated is designated by the first Criterion Bar. 
+<li><b>References</b> - PubMed IDs are provided in the column at the right. Click these bars to locate the article in which the associated data was reported (opens in new window).
+</ul> 
+<hr/><br/>
+<p>Make your selection below.  When you are done, the forest plot will appear below.</p>
+</div>
+
+
+<div id="fb1"></div>
+<div style="display:none" id="fb1-l"></div>
+<div style="display:none" id="fb1-r"></div>
+<div style="display:none" id="fb2"></div>
+<div style="display:none" id="fb2-l"></div>
+<div style="display:none" id="fb2-r"></div>
+<div style="display:none" id="metaDiv"><br/>
+To launch a meta analysis, select from the forest plot below any number of criteria by using the checkboxes at the top of the Criterion Bars. The checkboxes will turn red to indicate that they are marked. Then, click the button below to generate a meta analysis forest plot using those criteria. Note that while here you have the freedom to select any combination of criteria to generate the meta analysis, selecting more than one of any given type may invalidate the results.<br/><br/>  
+<button id="metasubmitbutton">Launch meta analysis plot</button></div>
+</td>  
+</tr>  
+<tr><td>
+<div id="spinner">
+<img src="/static/image/ajax-loader.gif"><br/>Loading... 
+</div>
+<div id="spinnerIE">
+<img src="/static/image/ajax-loader.gif"><br/>Loading... 
+</div>
+</td>
+</tr>
+</tbody>
+</table>  
+<br/><br/><br/>
+
+<div id="yPos"></div>
+<div id="subLabelAText"></div>
+<div id="subLabelBText"></div>
+<div id="subLabelCText"></div>
+<div name="holder" id="holder"></div>
+
+<p id=displayYCheckbox>
+<table class="bottomCont"><tbody><tr><td>
+<input type="checkbox" CHECKED name="displayY" id="displayY" value="displayY" />Toggle X-value display
+</td></tr></tbody></table>
+</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<div id="tip"></div>
+</body></html>
+

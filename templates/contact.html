@@ -1,0 +1,76 @@
+<html><head><title>UCLA CogGene Contact</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23633353-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<style type="text/css"></style></head>
+
+<body>
+
+<img src="/static/image/cogGene75.jpg"></img>
+
+<ul class="tab">
+<li><a href="/"><span>Meta Analysis </span></a></li>
+<li><a href="/methods"><span>Methods</span></a></li>
+<li><a href="/references"><span>References</span></a></li>
+<li class="activeTab"><a href="/contact"><span>Contact</span></a></li>
+</ul>
+
+
+<table class="topCont">
+
+<tbody>  
+<tr>  
+<td>
+<div id="browserRecommend"></div>
+
+<div>
+
+<p><b>Contact Us</b></p>
+<p>We welcome data submissions, comments, suggestions, corrections and other feedback. Please use the form below to contact us. 
+<br><i> If you would like to submit data, but it will not fit in the form, we will reply to your email with more detailed instructions.</i>
+<br> Thanks!</p>
+
+<form name="contactUs" method="post" action="/contact/"> {% csrf_token %}
+<table>
+	<tr>
+		<td>Name</td>
+		<td> {{ form.name }} </td>
+		<td> <font style='color:red;'> {{ form.name.errors }} </font> </td>
+	</tr>
+	<tr>
+		<td>Email address</td>
+		<td> {{ form.sender }} </td>
+		<td> <font style='color:red;'> {{ form.sender.errors }} </font> </td>
+	</tr>
+	<tr>
+		<td>Subject</td>
+		<td> {{ form.subject }} </td>
+		<td> <font style='color:red;'> {{ form.subject.errors }} </font> </td>
+	</tr>
+</table>
+<br>
+Enter your message to us:<br/><br/>
+<font style='color:red;'> {{ form.message.errors }} </font> 
+{{ form.message }} <br/><br/>
+<input type="submit" value="Submit" />
+</form>
+
+</div>
+</td>  
+</tr>  
+</tbody>
+</table>  
+</body></html>
+
+
